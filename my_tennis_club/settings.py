@@ -23,10 +23,11 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-$&pl4ls7bbhka0jm@pm186o5ok-%5)$!ep004=cgq=+55u-f^m'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
-
+ALLOWED_HOSTS = ['*']
+#Important: When DEBUG = False, Django requires you to specify the hosts you will allow this Django project to run from.
+# In production, this should be replaced with a proper domain name: ALLOWED_HOSTS = ['yourdomain.com']
 
 # Application definition
 

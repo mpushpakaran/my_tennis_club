@@ -16,3 +16,6 @@ py manage.py makemigrations members
 Which, in my case, will result in a prompt, because I try to add fields that are not allowed to be null, to a table that already contains records.
 
 '''
+#  To change the string representation - in the Admin panel models window
+def __str__(self):
+    return f"{self.firstname} {self.lastname}"
